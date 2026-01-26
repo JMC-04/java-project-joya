@@ -2,22 +2,22 @@
 <universite>
     <specialites>
         <specialite nom="Informatique">
-            <matiere code="NFA031" intitule="Réseaux"/>
-            <matiere code="NFA032" intitule="Bases de données"/>
+            <matiere code="NFA031" intitule="Reseaux"/>
+            <matiere code="NFA032" intitule="Bases de donnees"/>
             <matiere code="NFA035" intitule="Programmation Java"/>
-            <matiere code="NFP121" intitule="Algorithmes et structures de données"/>
+            <matiere code="NFP121" intitule="Algorithmes et structures de donnees"/>
         </specialite>
         <specialite nom="cbk specialty">
             <matiere code="cbk code" intitule="bdk matiere"/>
         </specialite>
-        <specialite nom="Mathématiques">
+        <specialite nom="Mathematiques">
             <matiere code="MAT101" intitule="Analyse"/>
-            <matiere code="MAT102" intitule="Algèbre linéaire"/>
-            <matiere code="MAT103" intitule="Probabilités"/>
+            <matiere code="MAT102" intitule="Algebre lineaire"/>
+            <matiere code="MAT103" intitule="Probabilites"/>
         </specialite>
         <specialite nom="Physique">
-            <matiere code="PHY202" intitule="Électromagnétisme"/>
-            <matiere code="PHY201" intitule="Mécanique"/>
+            <matiere code="PHY202" intitule="Électromagnetisme"/>
+            <matiere code="PHY201" intitule="Mecanique"/>
         </specialite>
         <specialite nom="joya">
             <matiere code="nfa031" intitule="javaaaaaa"/>
@@ -41,7 +41,7 @@
                 <valeur>NFP121</valeur>
             </matieres>
         </etudiant>
-        <etudiant password="calculus" specialite="Mathématiques" username="leclerc">
+        <etudiant password="calculus" specialite="Mathematiques" username="leclerc">
             <matieres>
                 <valeur>MAT101</valeur>
                 <valeur>MAT102</valeur>
@@ -66,7 +66,7 @@
                 <valeur>cbk code matiere 222</valeur>
             </matieres>
         </etudiant>
-        <etudiant password="math2024" specialite="Mathématiques" username="durand">
+        <etudiant password="math2024" specialite="Mathematiques" username="durand">
             <matieres>
                 <valeur>MAT101</valeur>
                 <valeur>MAT102</valeur>
