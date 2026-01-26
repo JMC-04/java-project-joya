@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<universite>
+    <specialites>
+        <specialite nom="Informatique">
+            <matiere code="NFA031" intitule="Réseaux"/>
+            <matiere code="NFA032" intitule="Bases de données"/>
+            <matiere code="NFA035" intitule="Programmation Java"/>
+            <matiere code="NFP121" intitule="Algorithmes et structures de données"/>
+        </specialite>
+        <specialite nom="cbk specialty">
+            <matiere code="cbk code" intitule="bdk matiere"/>
+        </specialite>
+        <specialite nom="Mathématiques">
+            <matiere code="MAT101" intitule="Analyse"/>
+            <matiere code="MAT102" intitule="Algèbre linéaire"/>
+            <matiere code="MAT103" intitule="Probabilités"/>
+        </specialite>
+        <specialite nom="Physique">
+            <matiere code="PHY202" intitule="Électromagnétisme"/>
+            <matiere code="PHY201" intitule="Mécanique"/>
+        </specialite>
+        <specialite nom="cbk specialiter 222">
+            <matiere code="cbk code matiere 222" intitule="cbk intinuler 222"/>
+        </specialite>
+        <specialite nom="informtique">
+            <matiere code="nfa011" intitule="ju6mu7 m7i"/>
+        </specialite>
+    </specialites>
+    <etudiants>
+        <etudiant password="secret789" specialite="Informatique" username="bernard">
+            <matieres>
+                <valeur>NFA032</valeur>
+                <valeur>NFP121</valeur>
+            </matieres>
+        </etudiant>
+        <etudiant password="calculus" specialite="Mathématiques" username="leclerc">
+            <matieres>
+                <valeur>MAT101</valeur>
+                <valeur>MAT102</valeur>
+                <valeur>MAT103</valeur>
+            </matieres>
+        </etudiant>
+        <etudiant password="mdp456" specialite="Informatique" username="martin">
+            <matieres>
+                <valeur>NFA035</valeur>
+                <valeur>NFP121</valeur>
+                <valeur>NFA031</valeur>
+            </matieres>
+        </etudiant>
+        <etudiant password="physique123" specialite="Physique" username="moreau">
+            <matieres>
+                <valeur>PHY201</valeur>
+                <valeur>PHY202</valeur>
+            </matieres>
+        </etudiant>
+        <etudiant password="cbk2" specialite="cbk specialiter 222" username="cbk2">
+            <matieres>
+                <valeur>cbk code matiere 222</valeur>
+            </matieres>
+        </etudiant>
+        <etudiant password="math2024" specialite="Mathématiques" username="durand">
+            <matieres>
+                <valeur>MAT101</valeur>
+                <valeur>MAT102</valeur>
+            </matieres>
+        </etudiant>
+        <etudiant password="test123" username="sansspec">
+            <matieres>
+                <valeur>NFA035</valeur>
+                <valeur>MAT101</valeur>
+            </matieres>
+        </etudiant>
+        <etudiant password="cbk" specialite="cbk specialty" username="cbk"/>
+        <etudiant password="pass123" specialite="Informatique" username="dupont">
+            <matieres>
+                <valeur>NFA035</valeur>
+                <valeur>NFA032</valeur>
+            </matieres>
+        </etudiant>
+    </etudiants>
+</universite>
