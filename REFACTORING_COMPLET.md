@@ -34,7 +34,7 @@ notifierObservateurs() → notifier_observateurs()
 ```
 src/fr/univ/bibliotheque/
 ├── model/          → Entités métier (7 classes)
-├── view/           → Interfaces Swing (9 classes)
+├── view/           → UI Swing + contrôleurs intégrés (9 classes)
 ├── service/        → Logique métier (1 classe)
 ├── repository/     → Persistance (2 classes)
 ├── strategy/
@@ -45,6 +45,8 @@ src/fr/univ/bibliotheque/
 ├── exception/      → Exceptions (2 classes)
 └── Main.java       → Point d'entrée
 ```
+
+**Note** : Les contrôleurs sont intégrés dans les classes View (pattern MVC simplifié) car la logique d'événements est simple et directement liée aux composants Swing.
 
 ### 🎨 B3) UI Swing Améliorée (100%)
 ✅ **Navigation simplifiée** : onglets clairs  

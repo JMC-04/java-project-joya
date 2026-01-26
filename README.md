@@ -44,7 +44,7 @@ javaProject/
 │   │   ├── Specialite.java
 │   │   └── Matiere.java
 │   │
-│   ├── view/                     (9 classes - interface Swing)
+│   ├── view/                     (9 classes - UI Swing + contrôleurs intégrés)
 │   │   ├── ApplicationContext.java
 │   │   ├── LoginWindow.java
 │   │   ├── EtudiantGUI.java

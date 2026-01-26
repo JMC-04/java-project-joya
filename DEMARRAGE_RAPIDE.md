@@ -61,10 +61,10 @@ java -cp . fr.univ.bibliotheque.Main
 ## 📊 Structure du Projet
 
 ```
-39 fichiers Java organisés en 9 packages :
+39 fichiers Java organisés en 8 packages :
 
 model/          → 7 classes (Media, Document, Etudiant...)
-view/           → 9 classes (GUI, Dialogs...)
+view/           → 9 classes (GUI, Dialogs + contrôleurs intégrés)
 service/        → 1 classe  (Catalog)
 repository/     → 2 classes (EtudiantRepo, MediaRepo)
 strategy/filter → 8 classes (Filtres de médias)
@@ -73,6 +73,8 @@ strategy/report → 3 classes (Stats)
 observer/       → 3 classes (Notifications)
 exception/      → 2 classes (Erreurs métier)
 ```
+
+**Architecture** : MVC simplifié avec contrôleurs intégrés dans les vues
 
 ---
 

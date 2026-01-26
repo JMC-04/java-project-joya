@@ -19,6 +19,9 @@
             <matiere code="PHY202" intitule="Électromagnétisme"/>
             <matiere code="PHY201" intitule="Mécanique"/>
         </specialite>
+        <specialite nom="joya">
+            <matiere code="nfa031" intitule="javaaaaaa"/>
+        </specialite>
         <specialite nom="cbk specialiter 222">
             <matiere code="cbk code matiere 222" intitule="cbk intinuler 222"/>
         </specialite>
@@ -27,6 +30,11 @@
         </specialite>
     </specialites>
     <etudiants>
+        <etudiant password="jmc" specialite="joya" username="jmc">
+            <matieres>
+                <valeur>nfa031</valeur>
+            </matieres>
+        </etudiant>
         <etudiant password="secret789" specialite="Informatique" username="bernard">
             <matieres>
                 <valeur>NFA032</valeur>

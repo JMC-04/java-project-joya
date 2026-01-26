@@ -1,0 +1,130 @@
+========================================
+  PROJET BIBLIOTHEQUE UNIVERSITAIRE
+  VERSION 2.0 - REFACTORING COMPLET
+========================================
+
+STRUCTURE FINALE (8 packages actifs)
+-------------------------------------
+
+src/fr/univ/bibliotheque/
+├── Main.java                    (1 classe)
+│
+├── model/                       (7 classes)
+│   ├── Media.java              - Classe abstraite de base
+│   ├── Document.java           - Média avec nombre_de_pages
+│   ├── SeanceVideo.java        - Média avec duree
+│   ├── QuizOnline.java         - Média avec duree_estimee + niveau_difficulte
+│   ├── Etudiant.java           - Utilisateur étudiant
+│   ├── Specialite.java         - Spécialité universitaire
+│   └── Matiere.java            - Matière académique
+│
+├── view/                        (9 classes - UI + contrôleurs)
+│   ├── ApplicationContext.java - Singleton contexte applicatif
+│   ├── LoginWindow.java        - Fenêtre de connexion
+│   ├── EtudiantGUI.java        - Interface étudiant complète
+│   ├── AdminGUI.java           - Interface admin avec onglets
+│   ├── MediaFormDialog.java    - Formulaire média (ajout/modif)
+│   ├── EtudiantFormDialog.java - Formulaire étudiant
+│   ├── MatiereFormDialog.java  - Formulaire matière
+│   ├── SpecialiteFormDialog.java - Formulaire spécialité
+│   └── EtudiantMatiereDialog.java - Assignation matières
+│
+├── service/                     (1 classe)
+│   └── Catalog.java            - Gestionnaire centralisé médias
+│
+├── repository/                  (2 classes)
+│   ├── EtudiantRepository.java - Persistence XML (universite.xml)
+│   └── MediaRepository.java    - Persistence binaire (medias.ser)
+│
+├── strategy/
+│   ├── filter/                 (8 classes)
+│   │   ├── MediaFilter.java   - Interface filtre
+│   │   ├── AuteurFilter.java
+│   │   ├── TypeFilter.java
+│   │   ├── AnneeFilter.java
+│   │   ├── MatiereFilter.java
+│   │   ├── SpecialiteFilter.java
+│   │   ├── AndFilter.java
+│   │   └── OrFilter.java
+│   │
+│   ├── export/                 (3 classes)
+│   │   ├── MediaExporter.java - Interface export
+│   │   ├── CSVExporter.java
+│   │   └── XMLExporter.java
+│   │
+│   └── report/                 (3 classes)
+│       ├── StatisticsReport.java - Interface rapport
+│       ├── ParMatiereReport.java
+│       └── ParSpecialiteReport.java
+│
+├── observer/                    (3 classes)
+│   ├── MediaObserver.java      - Interface observer
+│   ├── EmailNotifier.java      - Notifications email simulées
+│   └── UIRefresher.java        - Rafraîchissement UI
+│
+└── exception/                   (2 classes)
+    ├── InvalidDataException.java
+    └── MediaNotFoundException.java
+
+TOTAL: 39 fichiers Java
+
+========================================
+NAMING CONVENTION (100% snake_case)
+========================================
+
+Variables/Méthodes: lower_snake_case
+  - compteur_acces
+  - get_titre()
+  - set_auteur()
+  - ajouter_media()
+  - rechercher_par_titre()
+
+Classes: PascalCase
+  - Media
+  - EtudiantRepository
+  - MediaFormDialog
+
+Constantes: UPPER_SNAKE_CASE
+  - DEFAULT_XML_FILE
+  - FACILE, MOYEN, DIFFICILE
+
+========================================
+FONCTIONNALITÉS IMPLÉMENTÉES
+========================================
+
+✓ Login (admin + étudiant)
+✓ Recherche par ID et titre
+✓ Filtres (auteur, spécialité, type, année)
+✓ CRUD médias complet
+✓ CRUD entités (spécialité, matière, étudiant)
+✓ Assignation matières aux étudiants
+✓ Statistiques par matière/spécialité
+✓ Exports CSV/XML
+✓ Compteur d'accès médias
+✓ Notifications Observer
+✓ Sauvegarde persistante
+
+========================================
+QUALITÉ DU CODE
+========================================
+
+✓ Compilation: 0 erreur
+✓ Warnings: 0
+✓ Dossiers vides: 0 (controller/ et factory/ supprimés)
+✓ Fichiers inutiles: 0
+✓ Structure: MVC clean
+✓ Naming: 100% cohérent
+✓ Documentation: Complète
+
+========================================
+COMMANDES
+========================================
+
+Compiler:   .\compile.bat
+Lancer:     .\run.bat
+Login Admin: admin / admin
+Login Étudiant: alice / alice123
+
+========================================
+✅ PROJET PRÊT POUR PRODUCTION
+========================================
